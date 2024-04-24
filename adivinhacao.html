@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jogo da Adivinhação</h1>
+        </header>
+        <main>
+            <div class="level-select">
+                <h2>Escolha um nível de dificuldade:</h2>
+                <button onclick="comecarJogo('facil')">Fácil</button>
+                <button onclick="comecarJogo('medio')">Médio</button>
+                <button onclick="comecarJogo('dificil')">Difícil</button>
+            </div>
+            <div class="game-area" style="display: none;">
+                <p>Adivinhe o número secreto dentro da faixa indicada.</p>
+                <input type="number" id="tentativaInput" placeholder="Digite sua tentativa">
+                <button onclick="verificarTentativa()">Tentar</button>
+                <p class="tentativas"></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
